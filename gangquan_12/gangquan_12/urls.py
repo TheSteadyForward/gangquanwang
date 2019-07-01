@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from gangquan_12.apps import verifications
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('verifications.urls')),
 
 ]
