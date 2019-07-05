@@ -9,6 +9,7 @@ from django_redis import get_redis_connection
 from rest_framework.generics import GenericAPIView
 from rest_framework.views import status
 
+from users.models import User
 from . import constants
 from .serializers import ImageCodeCheckSerializer
 from gangquan_12.utils.yuntongxun.sms import CCP
@@ -42,6 +43,7 @@ class SMSCodeView(GenericAPIView):
         mobile  image_code_id, text
     """
     serializer_class = ImageCodeCheckSerializer
+
     def get(self, request, mobile):
         # 校验参数  由序列化器完成
         print(request.query_params)
@@ -58,7 +60,7 @@ class SMSCodeView(GenericAPIView):
 
         # redis 管道
         pl = redis_conn.pipeline()
-        pl.setex('sms_%s' % sms_code, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
+        pl.setex('sms_%s' % mobile, constants.SMS_CODE_REDIS_EXPIRES, sms_code)
         pl.setex('send_flag_%s' % mobile, constants.SEND_SMS_CODE_INTERVAL, constants.SMS_CODE_TEMP_ID)
 
         # 通知pipeline执行命令

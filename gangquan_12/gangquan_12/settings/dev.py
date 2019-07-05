@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/1.11/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.11/ref/settings/
 """
+import datetime
 import os
 import sys
 
@@ -216,7 +217,26 @@ LOGGING = {
 # 指明自定义的用户模型类
 AUTH_USER_MODEL = 'users.User'
 
+# 认证方法
+AUTHENTICATION_BACKENDS = [
+    'users.utils.UsernameMobileAuthBackend',
+]
+
 REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'gangquan_12.utils.exceptions.exception_handler',
+
+    # JWT进行认证注册
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
 }
+
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+
+    'JWT_RESPONSE_PYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
+}
+
