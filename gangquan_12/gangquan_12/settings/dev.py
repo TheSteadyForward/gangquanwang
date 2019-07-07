@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # 'gangquan_12.apps.users.apps.UsersConfig',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
+    'oauth.apps.OauthConfig',
 ]
 
 MIDDLEWARE = [
@@ -240,3 +241,9 @@ JWT_AUTH = {
     'JWT_RESPONSE_PYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
 }
 
+
+# QQ登录有关系的数据库
+QQ_CLIENT_ID = '101474184'
+QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
+QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
+QQ_STATE = '/'
