@@ -1163,3 +1163,1552 @@ INFO 2019-07-05 17:20:33,172 basehttp 124 "GET /oauth/qq/authorization/?next=/ H
 INFO 2019-07-05 17:25:19,775 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
 INFO 2019-07-05 17:26:07,258 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
 INFO 2019-07-05 19:13:33,913 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:53:16,152 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 10:53:36,497 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/request.py", line 412, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'quert_params'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 38, in get
+    code = request.quert_params.get('code')
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'quert_params'
+ERROR 2019-07-07 10:53:36,641 basehttp 124 "GET /oauth/qq/user/?code=E69AC4CC6A948DB1CC4F8FB0E91F511B HTTP/1.1" 500 19118
+INFO 2019-07-07 10:54:49,361 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 10:55:22,015 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 45, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/utils.py", line 65, in get_access_token
+    access_token = resp_dict['access_token']
+KeyError: 'access_token'
+ERROR 2019-07-07 10:55:22,042 basehttp 124 "GET /oauth/qq/user/?code=B1DCAF7063713B0D35D042935BFBCC86 HTTP/1.1" 500 18730
+INFO 2019-07-07 10:59:32,379 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:32,384 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:33,470 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:33,976 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:34,198 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:34,427 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:34,641 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:34,861 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:35,085 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:35,309 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:35,544 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:35,772 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 10:59:55,884 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 11:01:12,073 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 11:01:23,606 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 45, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/utils.py", line 67, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2019-07-07 11:01:23,634 basehttp 124 "GET /oauth/qq/user/?code=2D9286204E465434B3D5ECD02989868B HTTP/1.1" 500 18758
+ERROR 2019-07-07 11:04:10,287 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 45, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/utils.py", line 68, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2019-07-07 11:04:10,393 basehttp 124 "GET /oauth/qq/user/?code=2D9286204E465434B3D5ECD02989868B HTTP/1.1" 500 19781
+INFO 2019-07-07 11:07:28,518 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 11:07:40,449 basehttp 124 "GET /oauth/qq/user/?code=3791862195D551E8BD452B4B03587536 HTTP/1.1" 200 233
+ERROR 2019-07-07 11:07:40,554 exceptions 26 [<verifications.views.ImageCodeView object at 0x7fa2741e3470>] Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-07-07 11:07:40,556 basehttp 124 "GET /image_codes/ba6734e3-1d94-4d75-abdf-df4e2ddb7d72/ HTTP/1.1" 507 35
+INFO 2019-07-07 13:06:28,091 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 13:06:49,635 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 56, in get
+    oauth_qq_user = OAuthQQUser.objects.get(openid=openid)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+oauth.models.DoesNotExist: OAuthQQUser matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 59, in get
+    access_token = oauth_qq.generate_bind_user_access_token(openid)
+TypeError: generate_bind_user_access_token() takes 1 positional argument but 2 were given
+ERROR 2019-07-07 13:06:49,712 basehttp 124 "GET /oauth/qq/user/?code=92CB03E8E3D7AD552F21AECDEC2E718F HTTP/1.1" 500 19373
+INFO 2019-07-07 13:09:12,034 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 13:09:23,468 basehttp 124 "GET /oauth/qq/user/?code=831D604E762DCB08DAB7F6783644B50E HTTP/1.1" 200 233
+INFO 2019-07-07 13:09:23,492 basehttp 124 "GET /image_codes/715f5879-1f94-4317-8511-ff12889d7105/ HTTP/1.1" 200 3537
+INFO 2019-07-07 13:09:45,480 basehttp 124 "GET /sms_codes/15290980528/?text=BZXD&image_code_id=715f5879-1f94-4317-8511-ff12889d7105 HTTP/1.1" 200 16
+INFO 2019-07-07 13:10:19,774 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-07-07 13:10:19,779 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 84, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1002, in get_fields
+    serializer_class=self.__class__.__name__
+AssertionError: Class OAuthQQUserSerializer missing "Meta" attribute
+ERROR 2019-07-07 13:10:19,839 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19861
+INFO 2019-07-07 13:47:42,903 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-07-07 13:47:42,911 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 84, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `token` is not valid for model `User`.
+ERROR 2019-07-07 13:47:42,946 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 20227
+WARNING 2019-07-07 13:49:04,663 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+ERROR 2019-07-07 13:49:21,343 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 48, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/utils.py", line 67, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2019-07-07 13:49:21,369 basehttp 124 "GET /oauth/qq/user/?code=831D604E762DCB08DAB7F6783644B50E HTTP/1.1" 500 18815
+INFO 2019-07-07 13:49:30,237 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 13:50:00,288 basehttp 124 "GET /oauth/qq/user/?code=03FDD87A756B468CCAC0E67EEB07A134 HTTP/1.1" 200 233
+INFO 2019-07-07 13:50:00,308 basehttp 124 "GET /image_codes/0b06963c-5c0a-48a6-bf0f-1f1045ff40fa/ HTTP/1.1" 200 3357
+INFO 2019-07-07 13:50:17,013 basehttp 124 "GET /sms_codes/15290980528/?text=8knm&image_code_id=0b06963c-5c0a-48a6-bf0f-1f1045ff40fa HTTP/1.1" 200 16
+WARNING 2019-07-07 13:50:32,131 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+WARNING 2019-07-07 13:51:10,495 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9407
+INFO 2019-07-07 13:51:10,528 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2019-07-07 13:51:10,530 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2019-07-07 13:51:10,534 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2019-07-07 13:51:10,540 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2019-07-07 13:51:10,540 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2019-07-07 13:51:10,541 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2019-07-07 13:51:10,542 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2019-07-07 13:51:10,546 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2019-07-07 13:51:10,547 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+INFO 2019-07-07 13:51:10,548 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2019-07-07 13:51:10,639 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2019-07-07 13:51:10,907 base 152 Not Found: /favicon.ico
+WARNING 2019-07-07 13:51:10,908 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 3167
+WARNING 2019-07-07 13:52:14,501 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 46
+WARNING 2019-07-07 13:52:20,121 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+ERROR 2019-07-07 13:52:31,206 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:31,246 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:32,111 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:32,143 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:32,299 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:32,329 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:32,474 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:32,503 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:32,653 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:32,684 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:32,832 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:32,862 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:32,990 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,019 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:33,146 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,176 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:33,296 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,328 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:33,457 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,486 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:33,605 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,639 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:33,768 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,799 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:33,932 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:33,964 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:34,118 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:34,147 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:34,292 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:34,323 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:34,470 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:34,496 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+ERROR 2019-07-07 13:52:34,662 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 57, in validate
+    user = User.objects.get(mobile=mobile)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 380, in get
+    self.model._meta.object_name
+users.models.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 85, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 58, in validate
+    except User.DateNotExist:
+AttributeError: type object 'User' has no attribute 'DateNotExist'
+ERROR 2019-07-07 13:52:34,723 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19725
+WARNING 2019-07-07 13:52:43,504 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+ERROR 2019-07-07 13:54:03,367 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 89, in post
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2019-07-07 13:54:03,404 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 18750
+WARNING 2019-07-07 13:54:04,295 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 13:54:04,495 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 13:54:04,653 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 13:54:18,509 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+INFO 2019-07-07 15:10:53,541 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 15:11:08,032 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 68, in get
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2019-07-07 15:11:08,056 basehttp 124 "GET /oauth/qq/user/?code=69A76BCC13142C73F049750C01B8F478 HTTP/1.1" 500 18833
+ERROR 2019-07-07 15:11:53,311 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 49, in get
+    access_token = oauth_qq.get_access_token(code)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/utils.py", line 67, in get_access_token
+    return access_token[0]
+TypeError: 'NoneType' object is not subscriptable
+ERROR 2019-07-07 15:11:53,388 basehttp 124 "GET /oauth/qq/user/?code=69A76BCC13142C73F049750C01B8F478 HTTP/1.1" 500 103619
+INFO 2019-07-07 15:14:07,852 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 15:14:19,484 basehttp 124 "GET /oauth/qq/user/?code=ABADE49FE0ADE442A46A5246222733F4 HTTP/1.1" 200 233
+INFO 2019-07-07 15:14:19,503 basehttp 124 "GET /image_codes/23a6b2b3-258c-4c9d-bddd-8ea2c5923f90/ HTTP/1.1" 200 3381
+INFO 2019-07-07 15:14:56,607 basehttp 124 "GET /sms_codes/15290980528/?text=ALRN&image_code_id=23a6b2b3-258c-4c9d-bddd-8ea2c5923f90 HTTP/1.1" 200 16
+INFO 2019-07-07 15:15:11,327 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2019-07-07 15:15:11,339 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 15:22:02,314 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+INFO 2019-07-07 15:24:39,841 basehttp 124 "GET /oauth/qq/authorization/?next=/user_center_info.html HTTP/1.1" 200 196
+INFO 2019-07-07 15:25:00,123 basehttp 124 "GET /oauth/qq/user/?code=5D7E4FBFD82AE7E51AC1FCDCCCE6B5CD HTTP/1.1" 200 233
+INFO 2019-07-07 15:25:00,157 basehttp 124 "GET /image_codes/fb71a3af-eb52-48f1-bc51-f6e31587a76e/ HTTP/1.1" 200 3071
+INFO 2019-07-07 15:25:22,442 basehttp 124 "GET /sms_codes/15290980528/?text=SFPX&image_code_id=fb71a3af-eb52-48f1-bc51-f6e31587a76e HTTP/1.1" 200 16
+INFO 2019-07-07 15:25:34,125 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2019-07-07 15:25:34,137 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 15:31:47,072 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+INFO 2019-07-07 15:48:17,501 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-07-07 15:48:17,651 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 175
+INFO 2019-07-07 16:09:24,167 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-07 16:09:24,190 basehttp 124 "GET /user/ HTTP/1.1" 200 83
+INFO 2019-07-07 17:20:09,311 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 17:21:07,364 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 17:21:31,240 basehttp 124 "GET /oauth/qq/user/?code=043FDF620DDB00460C41F6FCC9DC710A HTTP/1.1" 200 233
+INFO 2019-07-07 17:21:31,262 basehttp 124 "GET /image_codes/5b82768a-1d62-4ac0-8bd8-9c01d62ac1e4/ HTTP/1.1" 200 3125
+INFO 2019-07-07 17:21:55,662 basehttp 124 "GET /sms_codes/15290980528/?text=EPPN&image_code_id=5b82768a-1d62-4ac0-8bd8-9c01d62ac1e4 HTTP/1.1" 200 16
+INFO 2019-07-07 17:22:03,273 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2019-07-07 17:22:03,285 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 17:22:07,108 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+INFO 2019-07-07 17:23:36,057 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 17:24:33,443 basehttp 124 "GET /oauth/qq/user/?code=614254831170B3C1027C871803DD9C9F HTTP/1.1" 200 233
+INFO 2019-07-07 17:24:33,483 basehttp 124 "GET /image_codes/4a19c1b6-5d43-46ba-949f-376ba94d1b8f/ HTTP/1.1" 200 3357
+INFO 2019-07-07 17:25:21,868 basehttp 124 "GET /sms_codes/15290980528/?text=XSPZ&image_code_id=4a19c1b6-5d43-46ba-949f-376ba94d1b8f HTTP/1.1" 200 16
+WARNING 2019-07-07 17:26:08,816 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 17:27:02,101 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+WARNING 2019-07-07 17:27:03,670 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 55
+INFO 2019-07-07 17:33:38,760 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2019-07-07 17:33:38,771 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+WARNING 2019-07-07 17:33:51,797 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 5288
+INFO 2019-07-07 17:34:23,612 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 17:34:34,776 basehttp 124 "GET /oauth/qq/user/?code=6E48BFE82512EA05E6058EEB88801086 HTTP/1.1" 200 233
+INFO 2019-07-07 17:34:34,807 basehttp 124 "GET /image_codes/4a5400f3-6c00-4c0d-9614-f15d478b7997/ HTTP/1.1" 200 3134
+INFO 2019-07-07 17:34:48,792 basehttp 124 "GET /sms_codes/15290980528/?text=X8QL&image_code_id=4a5400f3-6c00-4c0d-9614-f15d478b7997 HTTP/1.1" 200 16
+WARNING 2019-07-07 17:34:55,567 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 405 46
+INFO 2019-07-07 18:07:36,577 basehttp 124 "GET /image_codes/b99df97e-a497-412c-a5b4-5695a401abb8/ HTTP/1.1" 200 3075
+INFO 2019-07-07 18:07:39,742 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 18:08:16,005 basehttp 124 "GET /oauth/qq/user/?code=FD7C88E157DFFFA9C31A7115AA0003FA HTTP/1.1" 200 233
+INFO 2019-07-07 18:08:16,036 basehttp 124 "GET /image_codes/4699e03e-ee6a-46fd-90a0-6bcf89a19448/ HTTP/1.1" 200 3172
+INFO 2019-07-07 18:08:45,555 basehttp 124 "GET /sms_codes/15290980528/?text=DPHO&image_code_id=4699e03e-ee6a-46fd-90a0-6bcf89a19448 HTTP/1.1" 200 16
+INFO 2019-07-07 18:08:55,438 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+WARNING 2019-07-07 18:08:55,506 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 43
+WARNING 2019-07-07 18:09:21,209 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+INFO 2019-07-07 18:12:53,072 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 18:13:07,339 basehttp 124 "GET /oauth/qq/user/?code=1F27FFF3CB1754F4E670D0555DB9D469 HTTP/1.1" 200 233
+INFO 2019-07-07 18:13:07,374 basehttp 124 "GET /image_codes/66dae4e1-ab6f-4f94-8979-627049361b46/ HTTP/1.1" 200 2955
+INFO 2019-07-07 18:13:23,936 basehttp 124 "GET /sms_codes/15290980528/?text=RSXM&image_code_id=66dae4e1-ab6f-4f94-8979-627049361b46 HTTP/1.1" 200 16
+WARNING 2019-07-07 18:13:31,057 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 43
+WARNING 2019-07-07 18:15:35,683 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 400 43
+INFO 2019-07-07 18:21:11,563 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+ERROR 2019-07-07 18:21:11,575 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 53, in validate
+    if real_sms_code.decode() != sms_code:
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2019-07-07 18:21:11,692 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19259
+ERROR 2019-07-07 18:21:12,526 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 53, in validate
+    if real_sms_code.decode() != sms_code:
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2019-07-07 18:21:12,551 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19259
+ERROR 2019-07-07 18:21:12,710 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 53, in validate
+    if real_sms_code.decode() != sms_code:
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2019-07-07 18:21:12,736 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19259
+ERROR 2019-07-07 18:21:12,892 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 192, in post
+    return self.create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/serializers.py", line 53, in validate
+    if real_sms_code.decode() != sms_code:
+AttributeError: 'NoneType' object has no attribute 'decode'
+ERROR 2019-07-07 18:21:12,921 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 500 19259
+WARNING 2019-07-07 18:21:19,166 basehttp 124 "GET /oauth/qq/user/ HTTP/1.1" 400 9399
+INFO 2019-07-07 18:22:38,193 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 18:22:55,999 basehttp 124 "GET /oauth/qq/user/?code=F0C5672D3F72C81276F09E767387529C HTTP/1.1" 200 233
+INFO 2019-07-07 18:22:56,021 basehttp 124 "GET /image_codes/94b86ea6-c478-4523-bac2-1351f9f63b4c/ HTTP/1.1" 200 3254
+INFO 2019-07-07 18:23:23,365 basehttp 124 "GET /sms_codes/17600823404/?text=S47L&image_code_id=94b86ea6-c478-4523-bac2-1351f9f63b4c HTTP/1.1" 200 16
+INFO 2019-07-07 18:23:45,552 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 56
+INFO 2019-07-07 18:25:04,242 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 18:25:20,264 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 69, in get
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/settings.py", line 216, in __getattr__
+    raise AttributeError("Invalid API setting: '%s'" % attr)
+AttributeError: Invalid API setting: 'JWT_PAYLOAD_HANDLER'
+ERROR 2019-07-07 18:25:20,286 basehttp 124 "GET /oauth/qq/user/?code=C217C24C806A902091B139F1731D8C9E HTTP/1.1" 500 18833
+INFO 2019-07-07 18:26:59,528 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 18:27:08,359 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework_jwt/compat.py", line 33, in get_username
+    username = user.get_username()
+AttributeError: 'OAuthQQUser' object has no attribute 'get_username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 72, in get
+    payload = jwt_payload_handler(user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework_jwt/utils.py", line 34, in jwt_payload_handler
+    username = get_username(user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework_jwt/compat.py", line 35, in get_username
+    username = user.username
+AttributeError: 'OAuthQQUser' object has no attribute 'username'
+ERROR 2019-07-07 18:27:08,445 basehttp 124 "GET /oauth/qq/user/?code=332AF79C94EEC24B8F13AEF763D7E6D3 HTTP/1.1" 500 19266
+INFO 2019-07-07 18:28:06,250 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+ERROR 2019-07-07 18:28:17,682 exception 135 Internal Server Error: /oauth/qq/user/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework_jwt/compat.py", line 33, in get_username
+    username = user.get_username()
+AttributeError: 'str' object has no attribute 'get_username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/oauth/views.py", line 72, in get
+    payload = jwt_payload_handler(user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework_jwt/utils.py", line 34, in jwt_payload_handler
+    username = get_username(user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework_jwt/compat.py", line 35, in get_username
+    username = user.username
+AttributeError: 'str' object has no attribute 'username'
+ERROR 2019-07-07 18:28:17,709 basehttp 124 "GET /oauth/qq/user/?code=31ED4D10D39FAEBF13CA54AE7F3EBB57 HTTP/1.1" 500 19242
+INFO 2019-07-07 18:29:05,531 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 18:29:13,815 basehttp 124 "GET /oauth/qq/user/?code=63849A3AED73D5816A071C39882E7C08 HTTP/1.1" 200 218
+INFO 2019-07-07 18:29:31,587 basehttp 124 "GET /image_codes/e65d88bc-bd6b-4c09-a3c8-4af1e5207662/ HTTP/1.1" 200 3322
+INFO 2019-07-07 18:29:34,319 basehttp 124 "GET /usernames/python/count/ HTTP/1.1" 200 31
+INFO 2019-07-07 18:29:38,503 basehttp 124 "GET /usernames/python3/count/ HTTP/1.1" 200 32
+INFO 2019-07-07 18:29:53,001 basehttp 124 "GET /mobiles/15290980528/count/ HTTP/1.1" 200 34
+INFO 2019-07-07 18:30:01,675 basehttp 124 "GET /mobiles/15290980528/count/ HTTP/1.1" 200 34
+INFO 2019-07-07 18:30:01,722 basehttp 124 "GET /sms_codes/15290980528/?text=AKH8&image_code_id=e65d88bc-bd6b-4c09-a3c8-4af1e5207662 HTTP/1.1" 200 16
+INFO 2019-07-07 18:30:12,151 basehttp 124 "OPTIONS /users/ HTTP/1.1" 200 0
+INFO 2019-07-07 18:30:12,165 basehttp 124 "GET /usernames/python3/count/ HTTP/1.1" 200 32
+INFO 2019-07-07 18:30:12,172 basehttp 124 "GET /mobiles/15290980528/count/ HTTP/1.1" 200 34
+INFO 2019-07-07 18:30:12,400 basehttp 124 "POST /users/ HTTP/1.1" 201 227
+INFO 2019-07-07 18:30:23,793 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-07 18:30:36,164 basehttp 124 "GET /oauth/qq/user/?code=2FB914EFB0DBD5EA0088C05623D6029E HTTP/1.1" 200 233
+INFO 2019-07-07 18:30:36,185 basehttp 124 "GET /image_codes/f928204b-c854-4474-bea2-fb6675127815/ HTTP/1.1" 200 3345
+WARNING 2019-07-07 18:30:54,150 basehttp 124 "GET /sms_codes/15290980528/?text=EKEB&image_code_id=f928204b-c854-4474-bea2-fb6675127815 HTTP/1.1" 400 43
+INFO 2019-07-07 18:31:10,203 basehttp 124 "GET /image_codes/fb8b46cb-c369-4f7f-bf7f-750378dac8f6/ HTTP/1.1" 200 3360
+INFO 2019-07-07 18:31:24,000 basehttp 124 "GET /image_codes/c06278cd-9936-4fdf-83bd-09047c6a4fb3/ HTTP/1.1" 200 3296
+INFO 2019-07-07 18:31:30,649 basehttp 124 "GET /sms_codes/15290980528/?text=HUFZ&image_code_id=c06278cd-9936-4fdf-83bd-09047c6a4fb3 HTTP/1.1" 200 16
+INFO 2019-07-07 18:31:39,224 basehttp 124 "OPTIONS /oauth/qq/user/ HTTP/1.1" 200 0
+INFO 2019-07-07 18:31:39,473 basehttp 124 "POST /oauth/qq/user/ HTTP/1.1" 201 52
+INFO 2019-07-07 18:45:13,808 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+WARNING 2019-07-07 18:45:13,813 basehttp 124 "GET /user/ HTTP/1.1" 401 38
+INFO 2019-07-07 18:45:19,520 basehttp 124 "GET /oauth/qq/authorization/?next=/user_center_info.html HTTP/1.1" 200 196
+INFO 2019-07-07 18:45:34,290 basehttp 124 "GET /oauth/qq/user/?code=A38D3EEAAC247827C47BA0720815179B HTTP/1.1" 200 209
+INFO 2019-07-07 18:45:34,371 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 19:44:44,788 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-07 19:44:44,818 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 19:45:30,847 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 19:45:34,211 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 19:45:46,587 basehttp 124 "OPTIONS /email/ HTTP/1.1" 200 0
+WARNING 2019-07-07 19:45:46,598 base 152 Not Found: /email/
+WARNING 2019-07-07 19:45:46,599 basehttp 124 "PUT /email/ HTTP/1.1" 404 3306
+WARNING 2019-07-07 19:45:49,049 base 152 Not Found: /email/
+WARNING 2019-07-07 19:45:49,050 basehttp 124 "PUT /email/ HTTP/1.1" 404 3306
+ERROR 2019-07-07 19:46:40,981 exception 135 Internal Server Error: /email/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `eamil` is not valid for model `User`.
+ERROR 2019-07-07 19:46:41,012 basehttp 124 "PUT /email/ HTTP/1.1" 500 20631
+INFO 2019-07-07 19:46:43,073 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+ERROR 2019-07-07 19:46:55,484 exception 135 Internal Server Error: /email/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `eamil` is not valid for model `User`.
+ERROR 2019-07-07 19:46:55,510 basehttp 124 "PUT /email/ HTTP/1.1" 500 20631
+ERROR 2019-07-07 19:47:11,961 exception 135 Internal Server Error: /email/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `eamil` is not valid for model `User`.
+ERROR 2019-07-07 19:47:11,992 basehttp 124 "PUT /email/ HTTP/1.1" 500 20631
+ERROR 2019-07-07 19:50:18,340 exception 135 Internal Server Error: /email/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/generics.py", line 228, in put
+    return self.update(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 69, in update
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1050, in get_fields
+    source, info, model, depth
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1195, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1307, in build_unknown_field
+    (field_name, model_class.__name__)
+django.core.exceptions.ImproperlyConfigured: Field name `eamil` is not valid for model `User`.
+ERROR 2019-07-07 19:50:18,372 basehttp 124 "PUT /email/ HTTP/1.1" 500 20631
+INFO 2019-07-07 19:51:20,153 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:03:52,403 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:03:52,425 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 20:04:12,224 basehttp 124 "OPTIONS /email/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:04:12,313 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:17:29,346 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:17:29,370 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-07 20:17:31,420 basehttp 124 "OPTIONS /email/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:17:31,502 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:20:03,036 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 20:20:03,607 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 20:20:16,741 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:23:47,957 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 20:24:11,235 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:28:29,087 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:28:29,159 basehttp 124 "GET /user/ HTTP/1.1" 200 84
+INFO 2019-07-07 20:28:46,531 basehttp 124 "OPTIONS /email/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:28:46,833 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:32:20,076 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-07 20:32:22,354 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:39:17,232 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:39:17,486 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-07 20:39:18,851 basehttp 124 "OPTIONS /email/ HTTP/1.1" 200 0
+INFO 2019-07-07 20:41:00,822 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-07 20:42:15,381 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-07 20:42:17,037 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-07 20:44:19,815 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-07 20:44:20,892 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+INFO 2019-07-08 09:58:34,631 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-08 09:59:36,666 basehttp 124 "GET /oauth/qq/user/?code=B1419BAA64265094A36A8A3EB8EA2160 HTTP/1.1" 200 232
+INFO 2019-07-08 09:59:42,317 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-08 09:59:42,350 basehttp 124 "GET /user/ HTTP/1.1" 200 101
+INFO 2019-07-08 09:59:43,661 basehttp 124 "OPTIONS /email/ HTTP/1.1" 200 0
+INFO 2019-07-08 09:59:43,741 basehttp 124 "PUT /email/ HTTP/1.1" 200 36
+WARNING 2019-07-08 10:00:35,158 base 152 Not Found: /emails/verification/
+WARNING 2019-07-08 10:00:35,161 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1NjI2Mzc1ODMsImlhdCI6MTU2MjU1MTE4MywiYWxnIjoiSFM1MTIifQ.eyJlbWFpbCI6IjExMDk2NDQ2OThAcXEuY29tIiwidXNlcl9pZCI6N30.ZaaZdld650NGWoJg3qJiXMoe0PyqZ8RilJrmcozoQ4f3AJpgwZIfmSFtMYZhfx3_LBzo9II_4NqVBq46ckgPYA HTTP/1.1" 404 3719
+INFO 2019-07-08 10:13:58,824 basehttp 124 "GET /emails/verification/?token=eyJleHAiOjE1NjI2Mzc1ODMsImlhdCI6MTU2MjU1MTE4MywiYWxnIjoiSFM1MTIifQ.eyJlbWFpbCI6IjExMDk2NDQ2OThAcXEuY29tIiwidXNlcl9pZCI6N30.ZaaZdld650NGWoJg3qJiXMoe0PyqZ8RilJrmcozoQ4f3AJpgwZIfmSFtMYZhfx3_LBzo9II_4NqVBq46ckgPYA HTTP/1.1" 200 16
+INFO 2019-07-08 10:14:10,535 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 11:50:02,522 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-08 11:50:02,542 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 11:51:39,797 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 11:51:40,807 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 11:51:41,043 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 11:51:41,554 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
