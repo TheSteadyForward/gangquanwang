@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework.viewsets import ReadOnlyModelViewSet
+from rest_framework_extensions.cache.mixins import CacheResponseMixin
 
 from .models import Area
 from . import serializers
@@ -18,7 +19,8 @@ from . import serializers
 # class SubAreasView(RetrieveModelMixin, GenericAPIView):
 #     def retrieve(self):
 
-class AreasViewSet(ReadOnlyModelViewSet):
+class AreasViewSet(CacheResponseMixin, ReadOnlyModelViewSet):
+    pagination_class = None
 
     def get_queryset(self):
         # 通过请求方式指明不同的查询集

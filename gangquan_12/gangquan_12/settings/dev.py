@@ -234,6 +234,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+
 }
 
 JWT_AUTH = {
@@ -259,3 +260,11 @@ EMAIL_HOST_USER = '15290980528@163.com'
 EMAIL_HOST_PASSWORD = 'yue931118'
 #收件人看到的发件人
 EMAIL_FROM = '钢圈网<15290980528@163.com>'
+
+# DRF扩展
+REST_FRAMEWORK_EXTENSIONS = {
+    # 缓存时间
+    'DEFAULT_CACHE_RESPONSE_TIMEOUT': 60 * 60,
+    # 缓存存储
+    'DEFAULT_USE_CACHE': 'default',
+}
