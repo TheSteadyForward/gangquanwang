@@ -2712,3 +2712,1949 @@ INFO 2019-07-08 11:51:39,797 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
 INFO 2019-07-08 11:51:40,807 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
 INFO 2019-07-08 11:51:41,043 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
 INFO 2019-07-08 11:51:41,554 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 14:22:08,822 basehttp 124 "GET /oauth/qq/authorization/?next=/ HTTP/1.1" 200 175
+INFO 2019-07-08 14:22:26,544 basehttp 124 "GET /oauth/qq/user/?code=96DAE342E9CBB6BF0C67E7EF8E5D64A0 HTTP/1.1" 200 232
+INFO 2019-07-08 14:22:32,799 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-08 14:22:32,835 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 14:22:35,375 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 14:22:38,088 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 14:22:40,136 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2019-07-08 14:22:55,635 basehttp 124 "GET /areas/410000/ HTTP/1.1" 200 662
+INFO 2019-07-08 14:22:57,423 basehttp 124 "GET /areas/410100/ HTTP/1.1" 200 443
+INFO 2019-07-08 14:23:39,083 basehttp 124 "GET /areas/420000/ HTTP/1.1" 200 542
+INFO 2019-07-08 14:23:41,762 basehttp 124 "GET /areas/421300/ HTTP/1.1" 200 137
+INFO 2019-07-08 14:23:48,269 basehttp 124 "GET /areas/420200/ HTTP/1.1" 200 245
+INFO 2019-07-08 15:01:49,586 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 15:01:50,768 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2019-07-08 15:06:36,896 basehttp 124 "GET /areas/130000/ HTTP/1.1" 200 464
+INFO 2019-07-08 15:06:38,098 basehttp 124 "GET /areas/130200/ HTTP/1.1" 200 503
+INFO 2019-07-08 15:06:46,853 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 15:06:48,263 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2019-07-08 15:08:24,236 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-08 15:08:24,263 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 15:08:26,256 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 15:16:23,462 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 15:16:25,040 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 15:16:36,007 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 15:16:38,943 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 15:16:40,045 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 15:16:47,534 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 15:16:50,368 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 15:17:09,459 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 19:47:03,131 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:47:12,518 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 19:47:13,636 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2019-07-08 19:51:10,543 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:51:17,864 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 19:51:19,132 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2019-07-08 19:52:27,830 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:52:33,039 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:52:40,311 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 19:52:41,418 basehttp 124 "GET /areas/110100/ HTTP/1.1" 200 575
+INFO 2019-07-08 19:52:57,953 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+ERROR 2019-07-08 19:52:58,078 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 148, in create
+    return super().create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1153, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delect' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2019-07-08 19:52:58,166 basehttp 124 "POST /addresses/ HTTP/1.1" 500 20770
+ERROR 2019-07-08 19:52:59,423 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 148, in create
+    return super().create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1153, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delect' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2019-07-08 19:52:59,450 basehttp 124 "POST /addresses/ HTTP/1.1" 500 20770
+ERROR 2019-07-08 19:53:27,718 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 148, in create
+    return super().create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1153, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'is_delete' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2019-07-08 19:53:27,748 basehttp 124 "POST /addresses/ HTTP/1.1" 500 20770
+ERROR 2019-07-08 19:54:13,973 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 148, in create
+    return super().create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 20, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 434, in run_validation
+    value = self.to_internal_value(data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 485, in to_internal_value
+    fields = self._writable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 370, in _writable_fields
+    field for field in self.fields.values() if not field.read_only
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1025, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 1153, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'updata_time' was included on serializer UserAddressSerializer in the 'exclude' option, but does not match any model field.
+ERROR 2019-07-08 19:54:14,002 basehttp 124 "POST /addresses/ HTTP/1.1" 500 20774
+ERROR 2019-07-08 19:54:42,740 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/request.py", line 412, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'uesr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 148, in create
+    return super().create(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 161, in create
+    validated_data['user'] = self.context['request'].uesr
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/request.py", line 414, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'uesr'
+ERROR 2019-07-08 19:54:42,770 basehttp 124 "POST /addresses/ HTTP/1.1" 500 20048
+INFO 2019-07-08 19:56:56,202 basehttp 124 "POST /addresses/ HTTP/1.1" 201 247
+INFO 2019-07-08 19:57:05,876 basehttp 124 "OPTIONS /addresses/1/status/ HTTP/1.1" 200 0
+WARNING 2019-07-08 19:57:05,887 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 19:57:05,888 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 19:57:06,472 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 19:57:06,473 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 19:57:06,729 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 19:57:06,729 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+INFO 2019-07-08 19:57:36,487 basehttp 124 "GET /areas/410000/ HTTP/1.1" 200 662
+INFO 2019-07-08 19:57:39,466 basehttp 124 "GET /areas/410300/ HTTP/1.1" 200 539
+INFO 2019-07-08 19:58:08,276 basehttp 124 "POST /addresses/ HTTP/1.1" 201 238
+WARNING 2019-07-08 19:58:10,626 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 19:58:10,627 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 19:58:10,911 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 19:58:10,912 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 19:58:11,117 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 19:58:11,118 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+INFO 2019-07-08 19:58:12,709 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:58:16,126 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:58:17,579 basehttp 124 "OPTIONS /user/ HTTP/1.1" 200 0
+INFO 2019-07-08 19:58:17,622 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 19:58:19,662 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:58:42,195 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 19:58:42,739 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 19:58:44,651 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:59:05,196 basehttp 124 "GET /user/ HTTP/1.1" 200 100
+INFO 2019-07-08 19:59:06,816 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 19:59:35,158 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:50,143 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:50,957 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:51,296 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:51,614 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:51,801 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:52,000 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:52,225 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:01:52,578 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:02:15,470 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:03:45,458 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:04:29,398 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:13:49,170 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:14:11,195 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:16:07,043 basehttp 124 "GET /areas/110000/ HTTP/1.1" 200 74
+INFO 2019-07-08 20:20:33,909 basehttp 124 "OPTIONS /addresses/ HTTP/1.1" 200 0
+INFO 2019-07-08 20:20:33,982 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2019-07-08 20:20:34,021 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 127, in list
+    queryset = self.get_queryset()
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 117, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2019-07-08 20:20:34,459 basehttp 124 "GET /addresses/ HTTP/1.1" 500 22013
+INFO 2019-07-08 20:20:40,000 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+ERROR 2019-07-08 20:20:40,059 exception 135 Internal Server Error: /addresses/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 127, in list
+    queryset = self.get_queryset()
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 117, in get_queryset
+    return self.request.user.addresses.filter(is_delete=False)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_delete' into field. Choices are: city, city_id, create_time, district, district_id, email, id, is_deleted, mobile, place, province, province_id, receiver, tel, title, update_time, user, user_id, users
+ERROR 2019-07-08 20:20:40,341 basehttp 124 "GET /addresses/ HTTP/1.1" 500 22070
+INFO 2019-07-08 20:22:24,604 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:22:24,713 basehttp 124 "GET /addresses/ HTTP/1.1" 200 551
+INFO 2019-07-08 20:22:38,580 basehttp 124 "OPTIONS /addresses/2/status/ HTTP/1.1" 200 0
+WARNING 2019-07-08 20:22:38,674 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:38,682 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:38,829 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:38,831 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:39,301 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:39,303 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:39,503 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:39,506 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:39,770 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:39,771 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:40,042 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:40,044 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:40,219 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:40,221 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:40,492 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:40,494 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:40,934 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:40,935 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:41,174 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:41,175 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:41,536 base 152 Not Found: /addresses/2/status/
+WARNING 2019-07-08 20:22:41,537 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 404 6931
+INFO 2019-07-08 20:22:45,446 basehttp 124 "OPTIONS /addresses/1/status/ HTTP/1.1" 200 0
+WARNING 2019-07-08 20:22:45,524 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:45,526 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:45,744 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:45,746 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:46,133 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:46,159 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:46,195 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:46,198 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:46,703 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:46,705 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:48,795 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:48,804 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:49,834 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:49,837 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:50,109 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:50,110 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+WARNING 2019-07-08 20:22:50,624 base 152 Not Found: /addresses/1/status/
+WARNING 2019-07-08 20:22:50,625 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 404 6931
+INFO 2019-07-08 20:25:18,253 basehttp 124 "GET /areas/ HTTP/1.1" 200 1204
+INFO 2019-07-08 20:25:18,381 basehttp 124 "GET /addresses/ HTTP/1.1" 200 551
+INFO 2019-07-08 20:25:20,316 basehttp 124 "PUT /addresses/2/status/ HTTP/1.1" 200 16
+INFO 2019-07-08 20:25:25,414 basehttp 124 "GET /areas/410300/ HTTP/1.1" 200 539
+INFO 2019-07-08 20:25:25,423 basehttp 124 "GET /areas/410000/ HTTP/1.1" 200 662
+INFO 2019-07-08 20:25:45,283 basehttp 124 "OPTIONS /addresses/2/title/ HTTP/1.1" 200 0
+INFO 2019-07-08 20:25:45,375 basehttp 124 "PUT /addresses/2/title/ HTTP/1.1" 200 18
+INFO 2019-07-08 20:25:47,607 basehttp 124 "OPTIONS /addresses/2/ HTTP/1.1" 200 0
+WARNING 2019-07-08 20:25:47,630 basehttp 124 "DELETE /addresses/2/ HTTP/1.1" 405 48
+WARNING 2019-07-08 20:25:48,508 basehttp 124 "DELETE /addresses/2/ HTTP/1.1" 405 48
+WARNING 2019-07-08 20:25:48,917 basehttp 124 "DELETE /addresses/2/ HTTP/1.1" 405 48
+WARNING 2019-07-08 20:26:42,956 basehttp 124 "DELETE /addresses/2/ HTTP/1.1" 405 48
+INFO 2019-07-08 20:27:20,524 basehttp 124 "DELETE /addresses/2/ HTTP/1.1" 204 0
+INFO 2019-07-08 20:27:30,645 basehttp 124 "OPTIONS /addresses/1/title/ HTTP/1.1" 200 0
+INFO 2019-07-08 20:27:30,696 basehttp 124 "PUT /addresses/1/title/ HTTP/1.1" 200 18
+INFO 2019-07-08 20:27:32,954 basehttp 124 "PUT /addresses/1/status/ HTTP/1.1" 200 16
+INFO 2019-07-10 15:18:43,001 basehttp 124 "GET /admin/ HTTP/1.1" 302 0
+INFO 2019-07-10 15:18:43,100 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1652
+WARNING 2019-07-10 15:18:43,438 base 152 Not Found: /favicon.ico
+WARNING 2019-07-10 15:18:43,439 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 7015
+INFO 2019-07-10 15:18:50,731 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 1784
+ERROR 2019-07-10 15:18:57,152 exception 135 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django_redis/client/default.py", line 478, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/admin/sites.py", line 393, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/auth/views.py", line 90, in dispatch
+    return super(LoginView, self).dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/edit.py", line 183, in post
+    return self.form_valid(form)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/auth/views.py", line 119, in form_valid
+    auth_login(self.request, form.get_user())
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/auth/__init__.py", line 140, in login
+    request.session.cycle_key()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 311, in cycle_key
+    self.create()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 44, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/sessions/backends/base.py", line 164, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/sessions/backends/cache.py", line 71, in exists
+    return session_key and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/cache/backends/base.py", line 203, in __contains__
+    return self.has_key(key)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django_redis/client/default.py", line 476, in has_key
+    return client.exists(key) == 1
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/redis/client.py", line 1239, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/redis/client.py", line 772, in execute_command
+    connection = pool.get_connection(command_name, **options)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/redis/connection.py", line 994, in get_connection
+    connection.connect()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/redis/connection.py", line 497, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2019-07-10 15:18:57,278 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 212478
+INFO 2019-07-10 15:19:07,897 basehttp 124 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2019-07-10 15:19:07,938 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 15:19:10,704 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 3040
+INFO 2019-07-10 15:19:10,732 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+ERROR 2019-07-10 15:19:12,996 exception 135 Internal Server Error: /admin/goods/goods/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+ERROR 2019-07-10 15:19:13,415 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 500 1027394
+ERROR 2019-07-10 15:21:49,627 exception 135 Internal Server Error: /admin/goods/goods/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+ERROR 2019-07-10 15:21:50,105 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 500 1027528
+INFO 2019-07-10 15:21:51,460 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 3040
+ERROR 2019-07-10 15:23:15,040 exception 135 Internal Server Error: /admin/goods/goods/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+ERROR 2019-07-10 15:23:15,522 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 500 1027393
+INFO 2019-07-10 15:23:18,639 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 3040
+INFO 2019-07-10 15:23:24,396 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+ERROR 2019-07-10 15:23:28,594 exception 135 Internal Server Error: /admin/goods/goods/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+ERROR 2019-07-10 15:23:28,921 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 500 1027381
+INFO 2019-07-10 15:23:32,335 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+ERROR 2019-07-10 15:23:41,735 exception 135 Internal Server Error: /admin/goods/goods/add/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/response.py", line 84, in rendered_content
+    content = template.render(context, self._request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 68, in render
+    reraise(exc, self.backend)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 66, in render
+    return self.template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 207, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 177, in render
+    return compiled_parent._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 72, in render
+    result = block.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/loader_tags.py", line 216, in render
+    return template.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 209, in render
+    return self._render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 199, in _render
+    return self.nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 216, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/defaulttags.py", line 322, in render
+    return nodelist.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 990, in render
+    bit = node.render_annotated(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 957, in render_annotated
+    return self.render(context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1046, in render
+    return render_value_in_context(output, context)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/base.py", line 1024, in render_value_in_context
+    value = force_text(value)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/encoding.py", line 76, in force_text
+    s = six.text_type(s)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/html.py", line 394, in <lambda>
+    klass.__str__ = lambda self: mark_safe(klass_str(self))
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 41, in __str__
+    return self.as_widget()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/boundfield.py", line 127, in as_widget
+    **kwargs
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor/widgets.py", line 144, in render
+    'external_plugin_resources': json_encode(external_plugin_resources)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 31, in render
+    template = self.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/forms/renderers.py", line 37, in get_template
+    return self.engine.get_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 41, in get_template
+    reraise(exc, self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 89, in reraise
+    six.reraise(exc.__class__, new, sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/template/engine.py", line 148, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: ckeditor/widget.html
+ERROR 2019-07-10 15:23:42,088 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 500 1027371
+INFO 2019-07-10 15:24:10,631 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 15:27:08,977 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 15:27:10,841 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 15620
+INFO 2019-07-10 15:27:10,873 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 15:27:10,974 basehttp 124 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 200 2216
+INFO 2019-07-10 15:27:11,009 basehttp 124 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 200 701922
+INFO 2019-07-10 15:27:11,311 basehttp 124 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 200 338
+INFO 2019-07-10 15:27:11,350 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 200 47805
+INFO 2019-07-10 15:27:11,364 basehttp 124 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 200 18573
+INFO 2019-07-10 15:27:11,394 basehttp 124 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 200 5579
+INFO 2019-07-10 15:27:11,415 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 200 381
+INFO 2019-07-10 15:27:11,428 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 200 1306
+INFO 2019-07-10 15:27:11,446 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+INFO 2019-07-10 15:27:11,460 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+INFO 2019-07-10 15:27:11,469 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 200 419
+INFO 2019-07-10 15:27:11,502 basehttp 124 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 200 3094
+INFO 2019-07-10 15:27:11,580 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 200 12421
+INFO 2019-07-10 15:27:15,639 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/image/dialogs/image.js?t=J39A HTTP/1.1" 200 21360
+INFO 2019-07-10 15:27:15,649 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css?t=J39A HTTP/1.1" 200 13708
+INFO 2019-07-10 15:27:15,732 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/refresh.png HTTP/1.1" 200 757
+INFO 2019-07-10 15:27:15,734 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/lock.png HTTP/1.1" 200 506
+INFO 2019-07-10 15:27:15,738 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/close.png HTTP/1.1" 200 615
+INFO 2019-07-10 15:33:54,954 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 15620
+INFO 2019-07-10 15:33:54,983 basehttp 124 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:54,987 basehttp 124 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:54,993 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 15:33:55,265 basehttp 124 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,284 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,285 basehttp 124 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,300 basehttp 124 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,316 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,318 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,323 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,324 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,328 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,412 basehttp 124 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:55,473 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:57,820 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/image/dialogs/image.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:57,821 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:57,863 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/close.png HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:57,869 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/lock.png HTTP/1.1" 304 0
+INFO 2019-07-10 15:33:57,871 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/refresh.png HTTP/1.1" 304 0
+ERROR 2019-07-10 15:34:04,551 exception 135 Internal Server Error: /ckeditor/upload/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor_uploader/views.py", line 93, in post
+    filepath = get_upload_filename(uploaded_file.name, request.user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor_uploader/views.py", line 64, in get_upload_filename
+    return storage.get_available_name(
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 20, in import_string
+    module = import_module(module_path)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 944, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 222, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 986, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 956, in _find_and_load_unlocked
+ImportError: No module named 'gangquan_12.utils.fastdfs'
+ERROR 2019-07-10 15:34:04,630 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 500 120559
+ERROR 2019-07-10 15:35:19,080 exception 135 Internal Server Error: /ckeditor/upload/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'gangquan_12.utils.fastdfs.fdfs_storage' has no attribute 'FastDFSStorage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor_uploader/views.py", line 93, in post
+    filepath = get_upload_filename(uploaded_file.name, request.user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor_uploader/views.py", line 64, in get_upload_filename
+    return storage.get_available_name(
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "gangquan_12.utils.fastdfs.fdfs_storage" does not define a "FastDFSStorage" attribute/class
+ERROR 2019-07-10 15:35:19,166 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 500 131663
+ERROR 2019-07-10 16:11:14,146 exception 135 Internal Server Error: /ckeditor/upload/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+AttributeError: module 'gangquan_12.utils.fastdfs.fdfs_storage' has no attribute 'FastDFSStorage'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor_uploader/views.py", line 93, in post
+    filepath = get_upload_filename(uploaded_file.name, request.user)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/ckeditor_uploader/views.py", line 64, in get_upload_filename
+    return storage.get_available_name(
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 238, in inner
+    self._setup()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/files/storage.py", line 472, in _setup
+    self._wrapped = get_storage_class()()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/files/storage.py", line 467, in get_storage_class
+    return import_string(import_path or settings.DEFAULT_FILE_STORAGE)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 27, in import_string
+    six.reraise(ImportError, ImportError(msg), sys.exc_info()[2])
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/module_loading.py", line 23, in import_string
+    return getattr(module, class_name)
+ImportError: Module "gangquan_12.utils.fastdfs.fdfs_storage" does not define a "FastDFSStorage" attribute/class
+ERROR 2019-07-10 16:11:14,231 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 500 131663
+INFO 2019-07-10 19:22:25,388 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 15620
+INFO 2019-07-10 19:22:25,942 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 19:22:26,016 basehttp 124 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,016 basehttp 124 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,391 basehttp 124 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,438 basehttp 124 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,444 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,543 basehttp 124 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,595 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,609 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,617 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,683 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,726 basehttp 124 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,804 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:26,850 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:28,497 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:28,507 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/image/dialogs/image.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:28,588 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/close.png HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:28,601 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/refresh.png HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:28,612 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/lock.png HTTP/1.1" 304 0
+INFO 2019-07-10 19:22:38,293 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 200 159
+INFO 2019-07-10 19:23:08,468 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 15620
+INFO 2019-07-10 19:23:08,496 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 19:23:12,117 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 19:23:13,809 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 3040
+INFO 2019-07-10 19:23:13,831 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 19:23:15,931 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 19:23:17,895 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 15620
+INFO 2019-07-10 19:23:17,928 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 19:23:21,199 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 19:23:28,757 basehttp 124 "GET /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2019-07-10 19:23:28,794 basehttp 124 "GET /admin/ HTTP/1.1" 200 7507
+INFO 2019-07-10 19:23:30,363 basehttp 124 "GET /admin/goods/goods/ HTTP/1.1" 200 3040
+INFO 2019-07-10 19:23:30,459 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 19:23:31,685 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 15620
+INFO 2019-07-10 19:23:31,709 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 19:23:51,539 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 200 159
+INFO 2019-07-10 19:49:15,965 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 200 159
+INFO 2019-07-10 19:50:07,247 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 200 159
+INFO 2019-07-10 19:53:30,976 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 200 159
+INFO 2019-07-10 19:53:34,922 basehttp 124 "GET /ckeditor/browse/?CKEditor=id_desc_detail&CKEditorFuncNum=1&langCode=zh-cn HTTP/1.1" 200 7262
+INFO 2019-07-10 19:53:34,968 basehttp 124 "GET /static/ckeditor/ckeditor_uploader/admin_base.css HTTP/1.1" 200 1481
+INFO 2019-07-10 19:53:34,994 basehttp 124 "GET /static/ckeditor/galleriffic/css/basic.css HTTP/1.1" 200 1043
+INFO 2019-07-10 19:53:34,994 basehttp 124 "GET /static/ckeditor/galleriffic/css/galleriffic-2.css HTTP/1.1" 200 3166
+INFO 2019-07-10 19:53:35,121 basehttp 124 "GET /static/ckeditor/galleriffic/js/jquery.opacityrollover.js HTTP/1.1" 200 937
+INFO 2019-07-10 19:53:35,155 basehttp 124 "GET /static/ckeditor/galleriffic/js/jquery.galleriffic.js HTTP/1.1" 200 33266
+INFO 2019-07-10 19:53:35,218 basehttp 124 "GET /static/ckeditor/galleriffic/js/jquery-1.3.2.js HTTP/1.1" 200 120619
+INFO 2019-07-10 19:53:35,517 basehttp 124 "GET /static/ckeditor/galleriffic/css/loader.gif HTTP/1.1" 200 10453
+INFO 2019-07-10 20:20:46,348 basehttp 124 "GET /admin/goods/goods/add/ HTTP/1.1" 200 84030
+INFO 2019-07-10 20:20:46,526 basehttp 124 "GET /admin/jsi18n/ HTTP/1.1" 200 7682
+INFO 2019-07-10 20:20:46,551 basehttp 124 "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:46,568 basehttp 124 "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,261 basehttp 124 "GET /static/ckeditor/ckeditor/config.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,299 basehttp 124 "GET /static/ckeditor/ckeditor/lang/zh-cn.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,321 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,428 basehttp 124 "GET /static/ckeditor/ckeditor/styles.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,487 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,563 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,564 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,607 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,608 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,619 basehttp 124 "GET /static/ckeditor/ckeditor/contents.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:47,630 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=e1836357e HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:49,753 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/dialog.css?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:49,764 basehttp 124 "GET /static/ckeditor/ckeditor/plugins/image/dialogs/image.js?t=J39A HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:49,852 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/close.png HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:49,864 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/lock.png HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:49,874 basehttp 124 "GET /static/ckeditor/ckeditor/skins/moono-lisa/images/refresh.png HTTP/1.1" 304 0
+INFO 2019-07-10 20:20:56,453 basehttp 124 "POST /ckeditor/upload/ HTTP/1.1" 200 159

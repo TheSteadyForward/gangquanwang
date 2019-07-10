@@ -1,2 +1,5 @@
 # 邮箱验证有效期
 VERIFY_EMAIL_TOKEN_EXPIRES = 24 * 60 * 60
+
+# 用户设置地址数量上限
+USER_ADDRESS_COUNT_LIMIT = 20
