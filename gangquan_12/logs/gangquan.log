@@ -4857,3 +4857,215 @@ INFO 2019-07-12 09:41:35,877 basehttp 124 "GET /categories/115/skus/?page=1&page
 INFO 2019-07-12 09:41:41,495 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=price HTTP/1.1" 200 1312
 INFO 2019-07-12 09:41:42,444 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=sales HTTP/1.1" 200 1270
 INFO 2019-07-12 09:41:46,232 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=price HTTP/1.1" 200 1312
+WARNING 2019-07-12 18:07:07,133 base 152 Not Found: /skus_search/
+WARNING 2019-07-12 18:07:07,135 basehttp 124 "GET /skus_search/?text=%E5%8D%8E HTTP/1.1" 404 8598
+WARNING 2019-07-12 18:07:07,326 base 152 Not Found: /favicon.ico
+WARNING 2019-07-12 18:07:07,328 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8580
+ERROR 2019-07-12 18:07:40,662 exception 135 Internal Server Error: /skus/search/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 226, in to_representation
+    ret = super(HaystackSerializer, self).to_representation(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 207, in get_fields
+    field_mapping[field_name] = self._field_mapping[field_type](**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/fields.py", line 14, in __init__
+    super(DRFHaystackFieldMixin, self).__init__(**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/fields.py", line 767, in __init__
+    super(CharField, self).__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'decimal_places'
+ERROR 2019-07-12 18:07:40,913 basehttp 124 "GET /skus/search/?text=%E5%8D%8E HTTP/1.1" 500 157464
+ERROR 2019-07-12 18:09:49,561 exception 135 Internal Server Error: /skus/search/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 226, in to_representation
+    ret = super(HaystackSerializer, self).to_representation(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 207, in get_fields
+    field_mapping[field_name] = self._field_mapping[field_type](**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/fields.py", line 14, in __init__
+    super(DRFHaystackFieldMixin, self).__init__(**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/fields.py", line 767, in __init__
+    super(CharField, self).__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_digits'
+ERROR 2019-07-12 18:09:49,749 basehttp 124 "GET /skus/search/?text=%E5%8D%8E HTTP/1.1" 500 157761
+ERROR 2019-07-12 18:14:24,094 exception 135 Internal Server Error: /skus/search/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 226, in to_representation
+    ret = super(HaystackSerializer, self).to_representation(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 207, in get_fields
+    field_mapping[field_name] = self._field_mapping[field_type](**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/fields.py", line 14, in __init__
+    super(DRFHaystackFieldMixin, self).__init__(**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/fields.py", line 767, in __init__
+    super(CharField, self).__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'decimal_places'
+ERROR 2019-07-12 18:14:24,325 basehttp 124 "GET /skus/search/?id=1 HTTP/1.1" 500 156539
+ERROR 2019-07-12 18:14:36,606 exception 135 Internal Server Error: /skus/search/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/viewsets.py", line 116, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 686, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 226, in to_representation
+    ret = super(HaystackSerializer, self).to_representation(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 513, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/serializers.py", line 207, in get_fields
+    field_mapping[field_name] = self._field_mapping[field_type](**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/drf_haystack/fields.py", line 14, in __init__
+    super(DRFHaystackFieldMixin, self).__init__(**kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/fields.py", line 767, in __init__
+    super(CharField, self).__init__(**kwargs)
+TypeError: __init__() got an unexpected keyword argument 'decimal_places'
+ERROR 2019-07-12 18:14:36,814 basehttp 124 "GET /skus/search/?text=%E5%8D%8E HTTP/1.1" 500 157337
+INFO 2019-07-12 18:16:47,452 basehttp 124 "GET /skus/search/?text=%E5%8D%8E HTTP/1.1" 200 8332
+INFO 2019-07-12 18:16:47,495 basehttp 124 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2019-07-12 18:16:47,505 basehttp 124 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2019-07-12 18:16:47,507 basehttp 124 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2019-07-12 18:16:47,508 basehttp 124 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2019-07-12 18:16:47,514 basehttp 124 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2019-07-12 18:16:47,519 basehttp 124 "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+INFO 2019-07-12 18:16:47,532 basehttp 124 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37608
+INFO 2019-07-12 18:16:47,539 basehttp 124 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2019-07-12 18:16:47,539 basehttp 124 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2019-07-12 18:16:47,540 basehttp 124 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2019-07-12 18:16:47,634 basehttp 124 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2019-07-12 18:17:02,613 basehttp 124 "GET /skus/search/?text=%E5%8D%8E HTTP/1.1" 200 8332
+INFO 2019-07-12 18:17:50,308 basehttp 124 "GET /skus/search/?id=1 HTTP/1.1" 200 6193
+INFO 2019-07-12 18:18:02,142 basehttp 124 "GET /skus/search/?contents=1 HTTP/1.1" 200 8244
+INFO 2019-07-12 18:23:22,905 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:23:34,231 basehttp 124 "GET /skus/search/?text=&page=1&page_size=6 HTTP/1.1" 200 2553
+INFO 2019-07-12 18:23:42,025 basehttp 124 "GET /skus/search/?text=1&page=1&page_size=6 HTTP/1.1" 200 455
+INFO 2019-07-12 18:23:46,753 basehttp 124 "GET /skus/search/?text=&page=1&page_size=6 HTTP/1.1" 200 2553
+INFO 2019-07-12 18:23:48,953 basehttp 124 "GET /skus/search/?text=&page=2&page_size=6 HTTP/1.1" 200 2554
+INFO 2019-07-12 18:23:51,215 basehttp 124 "GET /skus/search/?text=&page=3&page_size=6 HTTP/1.1" 200 1750
+INFO 2019-07-12 18:23:57,759 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:25:08,559 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:30:05,009 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602

@@ -12,8 +12,9 @@ from rest_framework.viewsets import GenericViewSet
 from rest_framework.generics import GenericAPIView
 from django_redis import get_redis_connection
 
+from goods.serializers import SKUSerializer
 from .serializers import CreateUserSerializer, UserDetailSerializer, EmailSerializer, UserAddressSerializer, \
-    AddressTitleSerializer, AddUserBrowsingHistorySerializer, SKUSerializer
+    AddressTitleSerializer, AddUserBrowsingHistorySerializer
 from .models import User
 from . import constants
 from goods.models import SKU
