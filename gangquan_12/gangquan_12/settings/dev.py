@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'ckeditor',  # 富文本编辑器
     'ckeditor_uploader',  # 富文本编辑器上传图片模块
+    'django_crontab',  # 定时任务
+    'haystack',  # 对接搜索引擎
     # 'gangquan_12.apps.users.apps.UsersConfig',
     'users.apps.UsersConfig',
     'verifications.apps.VerificationsConfig',
@@ -132,6 +134,13 @@ CACHES = {
         "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    'history':{
+        'BACKEND':'django_redis.cache.RedisCache',
+        'LOCATION':'redis://127.0.0.1:6379/3',
+        'OPTIONS':{
+            'CLIENT_CLASS':'django_redis.client.DefaultClient',
         }
     }
 }
@@ -237,6 +246,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
+    'DEFAULT_PAGINATION_CLASS':'gangquan_12.utils.pagination.StandarRessiltSetPagination',
 
 }
 
@@ -291,6 +301,27 @@ CKEDITOR_UPLOAD_PATH = ''  # 上传图片保存路径，使用了FastDFS，所�
 
 # 生成的静态文件html问价保存目录
 GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
+
+CRONJOBS = [
+    # 每五分钟执行一次生成主页静态文件
+    ('*/5 * * * *', 'contents.crons.generate_static_index_html', '>> '+ os.path.join(os.path.dirname(BASE_DIR) + '/logs/crontab.log'))
+]
+
+# 解决crontab中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default':{
+        'ENGINE':'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL':'http://192.168.44.128:9200',  # 此处为elasticsearch运行的服务器ip地址，端口号固定为9200
+        'INDEX_NAME':'gangquan',  # 指定elasticsearch建立的索引库的名称
+    }
+}
+# 当添加、修改。删除数据是，自动生成索引
+HAYSTACK_STGNAL_PROCESSOR = 'haystack.signals.ResltimeSignalProcessor'
+
+
 
 
 

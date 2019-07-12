@@ -1,4 +1,3 @@
-
 from collections import OrderedDict
 from django.conf import settings
 from django.template import loader
@@ -8,7 +7,7 @@ import time
 import os
 
 
-def generate_static_index():
+def generate_static_index_html():
     """
     生成静态主页html文件
     :return:
@@ -69,6 +68,7 @@ def generate_static_index():
     file_path = os.path.join(settings.GENERATED_STATIC_HTML_FILES_DIR, 'index.html')
     with open(file_path, 'w') as f:
         f.write(html_text)
+
 
 
 
