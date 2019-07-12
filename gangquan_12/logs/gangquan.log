@@ -5069,3 +5069,478 @@ INFO 2019-07-12 18:23:51,215 basehttp 124 "GET /skus/search/?text=&page=3&page_s
 INFO 2019-07-12 18:23:57,759 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
 INFO 2019-07-12 18:25:08,559 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
 INFO 2019-07-12 18:30:05,009 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:35:04,938 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:40:04,940 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:45:05,069 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:50:05,778 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 18:55:04,674 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:00:04,686 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:05:02,966 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:10:03,356 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:15:02,729 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:20:04,958 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:25:07,037 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:30:03,610 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:35:03,323 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:40:02,890 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:45:03,426 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:50:03,366 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 19:55:02,735 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:00:03,223 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:05:02,687 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:10:03,217 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:15:02,838 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:20:03,607 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:25:03,041 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:30:03,919 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 20:35:03,351 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 22:18:19,013 basehttp 124 "GET /skus/search/?text=%E5%8D%8E&page=1&page_size=6 HTTP/1.1" 200 2602
+INFO 2019-07-12 22:18:25,675 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-07-12 22:18:25,738 base 152 Not Found: /cart/
+WARNING 2019-07-12 22:18:25,742 basehttp 124 "POST /cart/ HTTP/1.1" 404 8569
+WARNING 2019-07-12 22:18:27,851 base 152 Not Found: /cart/
+WARNING 2019-07-12 22:18:27,852 basehttp 124 "POST /cart/ HTTP/1.1" 404 8569
+ERROR 2019-07-12 22:21:58,970 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 24, in post
+    serializer.is_valid(raise_excption=True)
+TypeError: is_valid() got an unexpected keyword argument 'raise_excption'
+ERROR 2019-07-12 22:21:59,232 basehttp 124 "POST /cart/ HTTP/1.1" 500 20288
+WARNING 2019-07-12 22:25:06,649 basehttp 124 "POST /cart/ HTTP/1.1" 400 35
+WARNING 2019-07-12 22:27:29,452 basehttp 124 "POST /cart/ HTTP/1.1" 400 35
+WARNING 2019-07-12 22:27:51,283 basehttp 124 "POST /cart/ HTTP/1.1" 400 35
+INFO 2019-07-12 22:29:03,798 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+WARNING 2019-07-12 22:29:03,835 basehttp 124 "POST /cart/ HTTP/1.1" 400 35
+WARNING 2019-07-12 22:30:26,409 basehttp 124 "POST /cart/ HTTP/1.1" 400 35
+WARNING 2019-07-12 22:32:00,675 basehttp 124 "POST /cart/ HTTP/1.1" 400 35
+ERROR 2019-07-12 22:32:24,496 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 25, in post
+    serializer.is_valid(raise_exception=True)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 236, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 437, in run_validation
+    value = self.validate(value)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/serializers.py", line 15, in validate
+    sku = SKU.objects.get(id=attrs['id'])
+KeyError: 'id'
+ERROR 2019-07-12 22:32:24,719 basehttp 124 "POST /cart/ HTTP/1.1" 500 21724
+ERROR 2019-07-12 22:33:13,649 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 27, in post
+    sku_id = serializer.validated_data['id']
+KeyError: 'id'
+ERROR 2019-07-12 22:33:13,746 basehttp 124 "POST /cart/ HTTP/1.1" 500 21192
+ERROR 2019-07-12 22:33:40,167 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 38, in post
+    if user and user.is_authenticated:
+UnboundLocalError: local variable 'user' referenced before assignment
+ERROR 2019-07-12 22:33:40,265 basehttp 124 "POST /cart/ HTTP/1.1" 500 21296
+INFO 2019-07-12 22:34:39,679 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+INFO 2019-07-12 22:35:46,544 basehttp 124 "OPTIONS /authorizations/ HTTP/1.1" 200 0
+INFO 2019-07-12 22:35:46,867 basehttp 124 "POST /authorizations/ HTTP/1.1" 200 199
+WARNING 2019-07-12 22:36:00,241 basehttp 124 "GET /cart/ HTTP/1.1" 405 45
+WARNING 2019-07-12 22:36:00,246 base 152 Not Found: /categories/115/
+WARNING 2019-07-12 22:36:00,308 base 152 Not Found: /categories/115/hotskus/
+WARNING 2019-07-12 22:36:00,308 basehttp 124 "GET /categories/115/ HTTP/1.1" 404 8752
+WARNING 2019-07-12 22:36:00,310 basehttp 124 "GET /categories/115/hotskus/ HTTP/1.1" 404 8776
+INFO 2019-07-12 22:36:00,312 basehttp 124 "GET /categories/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1321
+INFO 2019-07-12 22:36:01,888 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+ERROR 2019-07-12 22:36:02,037 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 22:36:02,407 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22125
+ERROR 2019-07-12 22:36:03,216 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 43, in post
+    pl.hincrby('cart_%' % user.id, sku_id, count)
+ValueError: incomplete format
+ERROR 2019-07-12 22:36:03,323 basehttp 124 "POST /cart/ HTTP/1.1" 500 21542
+ERROR 2019-07-12 22:36:06,398 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 43, in post
+    pl.hincrby('cart_%' % user.id, sku_id, count)
+ValueError: incomplete format
+ERROR 2019-07-12 22:36:06,488 basehttp 124 "POST /cart/ HTTP/1.1" 500 21542
+ERROR 2019-07-12 22:37:11,232 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 49, in post
+    pl.exexute()
+AttributeError: 'Pipeline' object has no attribute 'exexute'
+ERROR 2019-07-12 22:37:11,336 basehttp 124 "POST /cart/ HTTP/1.1" 500 21571
+ERROR 2019-07-12 22:37:59,292 exception 135 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/carts/views.py", line 50, in post
+    return Response(selected.data)
+AttributeError: 'bool' object has no attribute 'data'
+ERROR 2019-07-12 22:37:59,385 basehttp 124 "POST /cart/ HTTP/1.1" 500 21575
+ERROR 2019-07-12 22:40:05,663 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 22:40:05,749 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 22125
+INFO 2019-07-12 22:41:36,816 basehttp 124 "OPTIONS /cart/ HTTP/1.1" 200 0
+INFO 2019-07-12 22:41:36,833 basehttp 124 "POST /cart/ HTTP/1.1" 200 39
+ERROR 2019-07-12 22:45:03,528 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 22:45:03,560 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21103
+INFO 2019-07-12 22:50:02,736 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+ERROR 2019-07-12 22:50:02,759 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 22:50:02,784 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21103
+ERROR 2019-07-12 22:55:03,113 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 22:55:03,141 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21103
+INFO 2019-07-12 23:00:03,750 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+ERROR 2019-07-12 23:00:03,791 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 23:00:03,829 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21103
+ERROR 2019-07-12 23:05:03,453 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 23:05:03,503 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21103
+INFO 2019-07-12 23:10:04,088 basehttp 124 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+ERROR 2019-07-12 23:10:04,110 exception 135 Internal Server Error: /browse_histories/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/views.py", line 210, in post
+    return self.create(request)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 21, in create
+    self.perform_create(serializer)
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/mixins.py", line 26, in perform_create
+    serializer.save()
+  File "/home/python/.virtualenvs/gangquan_12/lib/python3.5/site-packages/rest_framework/serializers.py", line 214, in save
+    self.instance = self.create(validated_data)
+  File "/home/python/Desktop/gangquanwang/gangquan_12/gangquan_12/apps/users/serializers.py", line 209, in create
+    pl.lrem('history_%s' % user_id, 0, sku_id)
+AttributeError: 'function' object has no attribute 'lrem'
+ERROR 2019-07-12 23:10:04,315 basehttp 124 "POST /browse_histories/ HTTP/1.1" 500 21103
