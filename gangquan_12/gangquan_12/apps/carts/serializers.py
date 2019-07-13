@@ -31,7 +31,7 @@ class CartSKUSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = SKU
-        fields = ('id', 'count', 'name','default_iamge_url', 'price', 'selected')
+        fields = ('id', 'count', 'name','default_image_url', 'price', 'selected')
 
 
 
