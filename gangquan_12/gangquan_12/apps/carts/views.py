@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from rest_framework import status
 from rest_framework.generics import GenericAPIView
 from django_redis import get_redis_connection
 import pickle
@@ -7,12 +8,13 @@ from rest_framework.response import Response
 # Create your views here.
 from goods.models import SKU
 from . import constants
-from .serializers import CartsSerializer, CartSKUSerializer
+from .serializers import CartsSerializer, CartSKUSerializer, CartDeleteSerializer
 
 
 class CartView(GenericAPIView):
     """购物车视图"""
     serializer_class = CartsSerializer
+    serializer_class = CartDeleteSerializer
 
     def perform_authentication(self, request):
         """执行具体请求方法前身份认证，由视图自己来进行身份认证"""
@@ -58,7 +60,7 @@ class CartView(GenericAPIView):
 
             if cart_str:
                 # 解析
-                cart_str = cart_str.decode()
+                cart_str = cart_str.encode()
                 cart_bytes = base64.b64decode(cart_str)
                 cart_dict = pickle.loads(cart_bytes)
             else:
@@ -125,9 +127,9 @@ class CartView(GenericAPIView):
         # 遍历sku_obj_list 向sku对象中添加count和selected属性
         for sku in sku_obj_list:
 
-            sku.count = cart_dict[int(sku_id)]['count']
+            sku.count = cart_dict[sku.id]['count']
 
-            sku.selected = cart_dict[int(sku_id)]['selected']
+            sku.selected = cart_dict[sku.id]['selected']
         # 序列化返回
         serializer = CartSKUSerializer(sku_obj_list, many=True)
 
@@ -138,7 +140,7 @@ class CartView(GenericAPIView):
         # sku_id  count  selected
         # 校验
         serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exceptinon=True)
+        serializer.is_valid(raise_exception=True)
 
         sku_id = serializer.validated_data['sku_id']
         count = serializer.validated_data['count']
@@ -190,6 +192,51 @@ class CartView(GenericAPIView):
                 response.set_cookie('cart', cart_cookie, constants.CART_COOKIE_EXPIRES)
 
                 return response
+
+    def delete(self, request):
+        """删除购物车"""
+        # 获取sku_id
+        # 校验
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        sku_id = serializer.validated_data['sku_id']
+        try:
+            user = request.user
+        except Exception:
+            user = None
+
+        # 判断用户状态
+        if user and user.is_authenticated:
+            # 已登录删除，redis
+            redis_conn = get_redis_connection('cart')
+            pl = redis_conn.pipeline()
+            # 删除hash
+            pl.hdel('cart_%s' % user.id, sku_id)
+            # 删除set
+            pl.srem('cart_selected_%' % user.id, sku_id)
+
+            pl.execute()
+
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        else:
+            # 未登录删除cookie
+            cookie_cart = request.COOKIES.get('cart')
+
+            if cookie_cart:
+                cart_dict = pickle.loads(base64.b64decode(cookie_cart.decode()))
+            else:
+                cart_dict = {}
+
+            response = Response(serializer.data)
+            if sku_id in cart_dict:
+                del cart_dict[sku_id]
+
+            cart_cookie = base64.b64encode(pickle.dumps(cart_dict)).decode()
+
+            response.set_cookie('cart', cart_cookie, max_age=constants.CART_COOKIE_EXPIRES)
+
+            return response
+
 
 
 
